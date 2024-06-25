@@ -2,12 +2,15 @@ name: learn-github-actions
 run-name: ${{ github.actor }} is learning GitHub Actions
 on: [push]
 jobs:
-  check-bats-version:
+  build-vue:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - run: npm install -g bats
-      - run: bats -v
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 8
+      - run: pmpm install
+      - run: pnpm run build
