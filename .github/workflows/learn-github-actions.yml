@@ -11,7 +11,7 @@ on:
     branches:
       - develop
 jobs:
-  build-vue-if-maerged:
+  build-vue-if-marged:
     if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     steps:
