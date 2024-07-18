@@ -24,3 +24,8 @@ jobs:
           version: 8
       - run: pnpm install
       - run: pnpm run build
+      - name: Archive atrifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: dist
+          path: dist
