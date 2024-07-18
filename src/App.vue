@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+import Test from './components/Test.vue';
 </script>
 
 <template>
   <div>
     REMOVED LOGO
   </div>
-  <HelloWorld msg="Vite + Vue" />
+  <Test msg="Vite + Vue" />
 </template>
 
 <style scoped>
