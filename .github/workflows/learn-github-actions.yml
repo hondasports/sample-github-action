@@ -10,6 +10,7 @@ on:
       - closed
     branches:
       - develop
+  workflow_dispatch:
 jobs:
   build-vue-if-marged:
     if: github.event.pull_request.merged == true
