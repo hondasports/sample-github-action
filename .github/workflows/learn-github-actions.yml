@@ -5,11 +5,11 @@ on:
   #   branches:
   #     - main
   #     - develop
-  pull_request:
-    types:
-      - closed
-    branches:
-      - develop
+  # pull_request:
+  #   types:
+  #     - closed
+  #   branches:
+  #     - develop
   workflow_dispatch:
 jobs:
   build-vue-if-marged:
